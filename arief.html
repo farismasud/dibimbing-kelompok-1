@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Situ Koffie</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Global Styles */
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Container */
+      .container {
+        font-family: "Arial", sans-serif;
+      }
+
+      /* Header */
+      .header {
+        padding: 1rem;
+        background-color: #fcfcfc; /* brown-700 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo-text {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2f3c3c; /* slate-950 */
+      }
+
+      .navigation {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .nav-link {
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+      }
+
+      .nav-link:hover {
+        color: #388e3c; /* green-800 */
+      }
+
+      .find-coffee-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: white;
+        background-color: #388e3c; /* green-800 */
+        border-radius: 9999px;
+        text-decoration: none;
+      }
+
+      .find-coffee-btn:hover {
+        background-color: #66bb6a; /* green-600 */
+      }
+
+      /* Hero Section */
+      .hero {
+        background-image: url("./assets/webpage.gif");
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-text {
+        text-align: center;
+        color: black;
+        z-index: 10;
+        padding-top: 6rem; /* to match padding-top from the original */
+      }
+
+      .hero h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+
+      .hero-description {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      .explore-menu-btn {
+        padding: 1rem 2rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: black;
+        background-color: #66bb6a; /* green-600 */
+        border-radius: 9999px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .explore-menu-btn:hover {
+        background-color: #388e3c; /* green-800 */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <!-- Header with logo and navigation -->
+        <header class="header">
+          <div class="flex-container">
+            <!-- Logo (left side) -->
+            <div class="logo">
+              <h1 class="logo-text">Situ Koffie</h1>
+            </div>
+
+            <!-- Navigation (center) -->
+            <div class="navigation">
+              <a href="#home" class="nav-link">Home</a>
+              <a href="#menu" class="nav-link">Menu</a>
+              <a href="#about" class="nav-link">About</a>
+              <a href="#fornews" class="nav-link">For News</a>
+              <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <!-- Find A Coffee (right side) -->
+            <div>
+              <a href="#location" class="find-coffee-btn">Find A Coffee</a>
+            </div>
+          </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-text">
+            <h2>Welcome to Our Situ Koffie</h2>
+            <p class="hero-description">
+              The best place to enjoy your favorite coffee blends
+            </p>
+            <a href="#menu" class="explore-menu-btn">Explore Our Menu</a>
+          </div>
+        </section>
+      </nav>
+    </div>
+  </body>
+</html>
