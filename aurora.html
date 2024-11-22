@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Proza+Libre:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Quattrocento:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <style>
+    .text-head {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+  .text-body {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  </style>
+  <title>Restoran Garuda</title>
+</head>
+<body class="bg-yellow-950">
+  
+  <!-- Home Page -->
+  <header class="w-screen h-screen">
+    
+    <div class="absolute inset-0 bg-center bg-no-repeat bg-cover" style="background-image: url(/assets/photos_aurora/menu-padang-above.jpg); filter: brightness(0.5);"></div>
+    <div class="absolute inset-0 bg-black bg-center bg-cover opacity-50"></div>
+
+    <!-- Navbar with Blurred Background -->
+    <section class="container sticky top-0 left-0 right-0 z-10 mx-auto mt-6 border rounded-xl backdrop-blur-md bg-white/30 border-white/10 ">
+      <div class="flex items-center justify-between px-6 py-4 mx-auto max-w-7xl">
+        <div>
+          <img src="/assets/photos_aurora/logo.png" alt="logo">
+        </div>
+        
+        <div>
+          <div class="items-center justify-between hidden gap-6 lg:flex">
+            <ul class="flex gap-8 text-white font-sm bold text- text-body">
+              <li>Home</li>
+              <li>Tentang Kami</li>
+              <li>Menu</li>
+              <li>Delivery Order</li>
+              <li>Ala Carte</li>
+            </ul>
+            <button class="px-4 py-3 text-sm font-bold text-white bg-yellow-500 text-body rounded-xl">Hubungi kami</button>
+          </div>
+          
+          <button class="flex flex-col items-end lg:hidden">
+            <div class="h-1 my-1 bg-white rounded-full w-7"></div>
+            <div class="w-6 h-1 bg-white rounded-full"></div>
+            <div class="w-5 h-1 my-1 bg-white rounded-full"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Main Content -->
+    <article class="relative flex flex-col items-center justify-center h-full mx-10 text-center">
+      <h1 class="text-5xl font-bold text-yellow-500 md:text-7xl text-head">Restoran Garuda</h1>
+      <p class="mt-2 text-2xl font-semibold text-white md:text-3xl text-head">Nikmatnya Santapan, Sejuta Kesan</p>
+      <div class="max-w-4xl mx-auto mt-8 text-sm text-white md:text-lg text-body">
+        <p>
+          Menyajikan hidangan lezat dengan kualitas terbaik. Kami hadir untuk memenuhi keinginan kuliner Anda
+          dengan berbagai pilihan menu yang beragam dan khas Nusantara. Nikmati pengalaman makan terbaik
+          bersama kami!
+        </p>
+      </div>
+      <a href="/menu" class="block">
+        <button class="px-5 py-3 my-8 font-semibold text-white bg-yellow-500 rounded-xl text-body">
+          Discover Our Menu
+        </button>
+      </a> 
+    </article>
+    
+  </header>
+
+  <!-- Our Story-->
+  <main class="flex flex-col items-center m-10 text-center md:flex-row md:my-40 md:p-10">
+      <section class="flex gap-3 md:gap-6 ">
+        <img src="/assets/photos_aurora/about-1.jpg" alt="Image 1" class="w-1/2 h-1/2 ">
+        <img src="/assets/photos_aurora/about-2.jpg" alt="Image 2" class="w-1/2 mt-10 md:mt-20 h-1/2">
+      </section>
+      
+      <section class="content-center mt-10 md:mt-0 md:ml-20">
+        <h4 class="block text-lg font-semibold text-white text-body md:text-2xl">Our Story</h4>
+        <span class="text-3xl font-bold text-yellow-500 text-head md:text-4xl">Restoran Garuda</span>
+        <div class="max-w-4xl mx-auto mt-8 text-sm text-white md:text-lg text-body ">
+          <p > 
+            Restoran Garuda telah berdiri sejak 1976 hingga saat ini. Kami bergerak dibidang mengelolah makanan yang spesifik yaitu Minang dan Melayu, 
+            dimana alasan untuk mendirikan rumah makan ini adalah merupakan hasil survey bahwa masih kurangnya sarana rumah makan terutama yang 
+            menyediakan makanan spesifik Minang dan Melayu dikota Medan.
+          </p>
+        </div>
+      </section>
+  </main>
+
+  <!--Our Menu-->  
+  <main class="flex flex-col items-center mx-5 sm:mx-10">
+    <!-- Section: Header -->
+    <article class="container flex flex-col mx-auto my-16 text-center">
+      <h4 class="block text-lg font-semibold text-white text-body md:text-2xl">Our Menu</h4>
+      <span class="text-3xl font-bold text-yellow-500 text-head md:text-5xl">Discover Our Signature</span>
+      <div class="max-w-4xl mx-auto mt-8 text-sm text-white md:text-lg text-body">
+        <p>
+          Dengan resep autentik yang diwariskan turun-temurun, kami menghadirkan cita rasa masakan khas padang seperti rendang yang empuk dan 
+          kaya rempah, gulai ayam yang gurih, hingga sambal ijo pedas menggugah selera.
+        </p>
+      </div>
+    </article>
+  
+    <!-- Section: Menu Cards -->
+    <section class="container grid grid-cols-1 gap-6 px-5 sm:grid-cols-2 lg:grid-cols-3"> 
+      <!-- Card 1 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/ayam-cabai-hijau.jpeg" alt="ayam-cabai-hijau" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left md:flex-col md:justify-between md:flex">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl ">Ayam Gulai</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Ayam Gulai dengan kuah santan kental dan rempah autentik, menghadirkan cita rasa Minangkabau yang tak terlupakan. 
+            Nikmati kelembutan ayam dan kehangatan rasa dalam setiap suapan!
+          </p>
+          <div class="pt-5 text-center">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/babat-usus.jpeg" alt="babat-usus" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl">Babat Usus</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Sajian babat usus yang lezat dengan bumbu khas Minangkabau. Cocok untuk pecinta masakan pedas dan kaya rempah.
+          </p>
+          <div class="pt-5 text-center ">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/sambal-merah-hijau.jpeg" alt="sambal-merah-hijau" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl">Sambal Merah Hijau</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Sambal autentik yang pedas dan segar, cocok sebagai pelengkap semua hidangan khas Padang.
+          </p>
+          <div class="pt-5 text-center">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Card 4 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/ayam-cabai-hijau.jpeg" alt="ayam-cabai-hijau" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left md:flex-col md:justify-between md:flex">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl">Ayam Gulai</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Ayam Gulai dengan kuah santan kental dan rempah autentik, menghadirkan cita rasa Minangkabau yang tak terlupakan. 
+            Nikmati kelembutan ayam dan kehangatan rasa dalam setiap suapan!
+          </p>
+          <div class="pt-5 text-center">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/babat-usus.jpeg" alt="babat-usus" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl">Babat Usus</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Sajian babat usus yang lezat dengan bumbu khas Minangkabau. Cocok untuk pecinta masakan pedas dan kaya rempah.
+          </p>
+          <div class="pt-5 text-center">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="flex flex-col items-center p-5 bg-gray-600 rounded-md shadow-md">
+        <img src="/assets/photos_aurora/menu/sambal-merah-hijau.jpeg" alt="sambal-merah-hijau" class="w-full rounded-md shadow-lg">
+        <div class="mt-3 text-left">
+          <h4 class="text-lg font-semibold text-yellow-500 md:text-xl">Sambal Merah Hijau</h4>
+          <p class="mt-2 text-sm text-white md:text-base">
+            Sambal autentik yang pedas dan segar, cocok sebagai pelengkap semua hidangan khas Padang.
+          </p>
+          <div class="pt-5 text-center">
+            <button class="px-4 py-2 text-sm font-bold text-white bg-yellow-500 rounded-md hover:bg-yellow-600">
+              Order Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+  <!--Services Pesanan Online-->
+  <main class="mx-5 my-20 text-center text-white sm:mx-10 md:my-40">
+    <article class="py-5">
+      <span class="block text-lg font-semibold text-body md:text-2xl">Services</span>
+      <h3 class="text-3xl font-bold text-yellow-500 text-head md:text-5xl">Pemesanan Online</h3>
+    </article>
+  
+    <article class="flex flex-col items-center gap-5 md:flex-row md:justify-center">
+      
+      <div class="flex flex-col items-center justify-between w-full p-5 md:w-1/3">
+        <img src="/assets/photos_aurora/purchase-order.png" class="w-24 h-24 md:w-32 md:h-32" alt="Delivery Order">
+        <h3 class="mt-5 text-2xl font-bold text-yellow-500 text-head">Delivery Order</h3>
+        <div class="mt-3 text-sm text-white md:text-lg text-body">
+          <p>Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 10 KM.</p>
+        </div>
+      </div>
+  
+      <div class="flex flex-col items-center justify-between w-full p-5 md:w-1/3">
+        <img src="/assets/photos_aurora/wish-list.png" class="w-24 h-24 md:w-32 md:h-32" alt="Ala Carte">
+        <h3 class="mt-5 text-2xl font-bold text-yellow-500 text-head">Ala Carte</h3>
+        <div class="mt-3 text-sm text-white md:text-lg text-body">
+          <p>Menikmati hidangan kami langsung di rumah/kantor Anda. Minimal order Rp500,000.-</p>
+        </div>
+      </div>
+  
+      <div class="flex flex-col items-center justify-between w-full p-5 md:w-1/3">
+        <img src="/assets/photos_aurora/natural-food.png" class="w-24 h-24 md:w-32 md:h-32" alt="Prasmanan">
+        <h3 class="mt-5 text-2xl font-bold text-yellow-500 text-head">Prasmanan</h3>
+        <div class="mt-3 text-sm text-white md:text-lg text-body">
+          <p>Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi kantor kami.</p>
+        </div>
+      </div>
+    </article>
+  </main>
+    
+  <!--Cabang-->
+  <main class="mx-10 my-10 text-white md:mx-10 md:px-10 md:mb-24">
+    <section class="mx-10 mt-20 mb-10 text-center md:mb-20"> 
+      <div class="pt-10">
+          <span class="block text-lg font-semibold text-body md:text-2xl">Restauran Garuda</span>
+          <h3 class="text-3xl font-bold text-yellow-500 text-head md:text-5xl">Cabang Resmi</h3>
+      </div>
+    </section>
+    
+    <section class=" md:gap-6 md:flex">
+      <section class="flex flex-row gap-6">
+        <div class="flex flex-col w-auto h-auto">
+          <img src="/assets/photos_aurora/cabang-1.jpg" alt="cabang-1" class="w-full ">
+          <h3 class="pt-6 text-xl underline text-body">Kota Medan</h3>
+          <ul class="flex flex-col gap-5 pt-3">
+            <li>Berjaya Sisingamangaraja <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>J-City <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Ringroad<br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Pattimura<br>
+              No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Adam Malik 40<br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col w-auto h-auto">
+          <img src="/assets/photos_aurora/cabang-2.jpg" alt="cabang-1" class="w-full ">
+          <h3 class="pt-6 text-xl underline text-body">Jakarta</h3>
+          <ul class="flex flex-col gap-5 pt-3">
+            <li>Berjaya Sisingamangaraja <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>J-City <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Ringroad<br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Pattimura<br>
+              No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Adam Malik 40<br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+          </ul>
+        </div>
+      </section>
+
+        
+      <section class="flex flex-row gap-6 mt-16 md:mt-0 ">
+        <div class="flex flex-col w-auto h-auto">
+          <img src="/assets/photos_aurora/cabang-3.jpg" alt="cabang-1" class="w-full ">
+          <h3 class="pt-6 text-xl underline text-body">Lampung</h3>
+          <ul class="flex flex-col gap-5 pt-3">
+            <li>Berjaya Sisingamangaraja <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col w-auto h-auto">
+          <img src="/assets/photos_aurora/cabang-4.jpg" alt="cabang-1" class="w-full ">
+          <h3 class="pt-6 text-xl underline text-body">Pekanbaru</h3>
+          <ul class="flex flex-col gap-5 pt-3">
+            <li> Pekanbaru <br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+            <li>Kep. Riau - Ahmad Yani<br>
+            No. Telp <a href="https://wa.me/6282260987799" class="text-yellow-500">(+62)82260987799</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+  </main>
+  
+  <!--konten akhir-->
+  <main class="flex flex-col items-center text-white bg-black text-body md:flex-row md:justify-center">
+    <article class="flex flex-col w-auto max-w-6xl mx-5 my-10 md:flex-row md:my-16 ">
+      
+      <!-- Section: Restoran Garuda -->
+      <section class="w-auto mx-5 md:px-5 md:w-1/2">
+        <h3 class="py-5 text-lg font-bold text-yellow-500">Restoran Garuda</h3>
+        <p>
+          Restoran Garuda telah berdiri sejak 1976 hingga saat ini. Kami bergerak dibidang mengelolah makanan yang spesifik yaitu Minang dan Melayu.
+        </p>
+      </section>
+      
+      <!-- Section: Open Hours -->
+      <section class="w-auto mx-5 md:px-5 md:w-1/2">
+        <h3 class="py-5 text-lg font-bold text-yellow-500">Open Hours</h3>
+        <div class="flex flex-col gap-2">
+          <div class="flex justify-between">
+            <p>Senin</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Selasa</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Rabu</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Kamis</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Jumat</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Sabtu</p>
+            <p>9:00 - 20:00</p>
+          </div>
+          <div class="flex justify-between">
+            <p>Minggu</p>
+            <p>9:00 - 20:00</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section: Newsletter -->
+      <section class="w-auto mx-5 md:px-5 md:w-1/2">
+        <h3 class="py-5 text-lg font-bold text-yellow-500">Newsletter</h3> 
+        <div class="flex flex-col gap-5">
+          <p>Dapatkan informasi dan promo terbaru dari kami.</p>
+          <input
+            type="email"
+            placeholder="Enter email address"
+            class="w-full p-3 text-gray-400 bg-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+          />
+          <button class="w-full p-3 text-white bg-yellow-500 rounded-md hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-700">
+            Subscribe
+          </button>
+        </div>
+      </section>
+    
+    </article>
+  </main>
+  
+      
+<!--Footer-->
+  <footer class="py-6 text-center text-white bg-black">
+    <p>© 2024 Restoran Garuda | All Rights Reserved</p>
+    <div class="mt-4 space-x-4">
+      <a href="#" class="text-yellow-500">Facebook</a>
+      <a href="#" class="text-yellow-500">Instagram</a>
+      <a href="#" class="text-yellow-500">Twitter</a>
+    </div>
+  </footer>
+
+  
+  </body>
+</html>
